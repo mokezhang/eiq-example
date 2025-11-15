@@ -1,0 +1,6 @@
+~/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-linux-gnueabihf/bin/arm-none-linux-gnueabihf-gcc -c main.cpp -o main.o  -I /home/moke/code/opencv/modules/core/include/ -I /home/moke/code/opencv/build.staticlinux
+~/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-linux-gnueabihf/bin/arm-none-linux-gnueabihf-gcc main.o -o dms  -L /home/moke/code/opencv/build.staticlinux/lib -lopencv_core -lstdc++
+/home/moke/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-linux-gnueabihf/bin/../lib/gcc/arm-none-linux-gnueabihf/13.3.1/../../../../arm-none-linux-gnueabihf/bin/ld: /home/moke/code/opencv/build.staticlinux/lib/libopencv_core.a(rand.cpp.o): undefined reference to symbol 'logf@@GLIBC_2.27'
+/home/moke/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-linux-gnueabihf/bin/../lib/gcc/arm-none-linux-gnueabihf/13.3.1/../../../../arm-none-linux-gnueabihf/bin/ld: /home/moke/arm-gnu-toolchain-13.3.rel1-x86_64-arm-none-linux-gnueabihf/bin/../arm-none-linux-gnueabihf/libc/lib/libm.so.6: error adding symbols: DSO missing from command line
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:29: dms] Error 1

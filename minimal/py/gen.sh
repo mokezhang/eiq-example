@@ -8,11 +8,11 @@ python gen_rgb_cpp.py \
     --source_folder_path ${src_out_abs} \
     --header_folder_path ${hdr_out_abs}
 
-# python gen_rgb_bin.py \
-#     --image_path ${input_dir_abs} \
-#     --source_folder_path ${src_out_abs} \
-#     --header_folder_path ${hdr_out_abs} \
-#     --image_size ${img_size} ${img_size}
+python gen_rgb_bin.py \
+    --image_path ${input_dir_abs} \
+    --source_folder_path ${src_out_abs} \
+    --header_folder_path ${hdr_out_abs} \
+    --image_size ${img_size} ${img_size}
 
 mv *.cc ../
 mv *.hpp ../
